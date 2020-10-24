@@ -1,0 +1,30 @@
+const letterColors = {
+  a: 'F23',
+  b: 'E34',
+  c: 'F45',
+  d: 'AF6',
+  e: '890',
+  f: '678',
+  g: '789',
+  h: '890',
+  i: '90F',
+  j: 'FF2',
+  k: 'F23',
+  l: 'FE4',
+  m: 'DE5',
+  n: 'F96',
+  o: '567',
+  p: '678',
+  q: '789',
+  r: '5AB',
+  s: '90F',
+  t: 'FF2',
+  u: 'F23',
+  v: 'AF4',
+  w: 'CD5',
+  x: 'AB6',
+  y: 'ABC',
+  z: '678'
+};
+
+export default letterColors;
