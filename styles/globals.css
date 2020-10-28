@@ -245,6 +245,12 @@ textarea:focus {
   border-radius: 50%;
   margin-bottom: 20px;
   box-shadow: 1px 2px 20px rgba(33, 97, 140, 0.7);
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+#main-header .main-title img:hover {
+  filter: grayscale(50%);
 }
 
 #main-header .main-title .links a {
@@ -253,7 +259,8 @@ textarea:focus {
   margin: 0 10px;
 }
 
-#main-header .main-title .links a:hover {
+#main-header .main-title .links a:hover,
+  #main-header .main-title .links a:focus {
   transform: scale(1.2);
 }
 
@@ -305,7 +312,8 @@ textarea:focus {
   margin-bottom: 10px;
 }
 
-#main-header .main-rating a:hover {
+#main-header .main-rating a:hover,
+  #main-header .main-rating a:focus {
   color: var(--primary-color);
 }
 
@@ -363,8 +371,9 @@ textarea:focus {
 }
 
 #navbar ul li a:hover::before,
+#navbar ul li a:focus::before,
 #navbar ul li a.active::before {
-  background: var(--primary-color)
+  background: var(--primary-color);
 }
 
 /* ---------- Drop Down Menu ---------- */
