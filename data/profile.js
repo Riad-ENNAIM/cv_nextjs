@@ -534,7 +534,7 @@ export const frProfile = {
         },
         {
           _id: "Sa2",
-          title: "Node.js"
+          title: "Next.js"
         },
         {
           _id: "Sa3",
@@ -542,7 +542,11 @@ export const frProfile = {
         },
         {
           _id: "Sa4",
-          title: "Next.js"
+          title: "Node.js"
+        },
+        {
+          _id: "Sa5",
+          title: "Express"
         }
       ]
     },
@@ -578,43 +582,39 @@ export const frProfile = {
     },
     {
       _id: "S4",
-      title: "Java",
-      level: 2,
+      title: "Markup & Style",
+      level: 1,
       subSkills: [
         {
           _id: "Sd1",
-          title: "JEE"
+          title: "HTML5"
         },
         {
           _id: "Sd2",
-          title: "Spring"
+          title: "CSS3"
         },
         {
           _id: "Sd3",
-          title: "Spring boot"
+          title: "Bootstrap"
+        },
+        {
+          _id: "Sd4",
+          title: "Material UI"
         }
       ]
     },
     {
       _id: "S5",
-      title: "WEB",
+      title: "Base de données",
       level: 1,
       subSkills: [
         {
           _id: "Se1",
-          title: "HTML5"
+          title: "SQL : Mysql"
         },
         {
           _id: "Se2",
-          title: "CSS3"
-        },
-        {
-          _id: "Se3",
-          title: "SQL"
-        },
-        {
-          _id: "Se4",
-          title: "NoSQL"
+          title: "NoSQL : MongoDB"
         }
       ]
     },
@@ -648,7 +648,7 @@ export const frProfile = {
         },
         {
           _id: "Sg2",
-          title: "Algorithmique avancée"
+          title: "Algorithmique"
         },
         {
           _id: "Sg3",
@@ -661,40 +661,13 @@ export const frProfile = {
         {
           _id: "Sg5",
           title: "Github / Gitlab"
-        }
-      ]
-    },
-    {
-      _id: "S8",
-      title: "Autres compétences",
-      level: 3,
-      subSkills: [
+        },
         {
-          _id: "Sh1",
+          _id: "Sg6",
           title: "Bush_unix"
-        },
-        {
-          _id: "Sh2",
-          title: "SSH"
-        },
-        {
-          _id: "Sh3",
-          title: "Systèmes distribués"
-        },
-        {
-          _id: "Sh4",
-          title: "Cryptographie"
-        },
-        {
-          _id: "Sh5",
-          title: "Math appliquée"
-        },
-        {
-          _id: "Sh6",
-          title: "Programmation linéaire"
         }
       ]
-    },
+    }
   ],
   trainings: [
     {
@@ -1271,7 +1244,7 @@ export const engProfile = {
         },
         {
           _id: "Sa2",
-          title: "Node.js"
+          title: "Next.js"
         },
         {
           _id: "Sa3",
@@ -1279,7 +1252,11 @@ export const engProfile = {
         },
         {
           _id: "Sa4",
-          title: "Next.js"
+          title: "Node.js"
+        },
+        {
+          _id: "Sa5",
+          title: "Express"
         }
       ]
     },
@@ -1315,43 +1292,39 @@ export const engProfile = {
     },
     {
       _id: "S4",
-      title: "Java",
-      level: 2,
+      title: "Markup & Style",
+      level: 1,
       subSkills: [
         {
           _id: "Sd1",
-          title: "JEE"
+          title: "HTML5"
         },
         {
           _id: "Sd2",
-          title: "Spring"
+          title: "CSS3"
         },
         {
           _id: "Sd3",
-          title: "Spring boot"
+          title: "Bootstrap"
+        },
+        {
+          _id: "Sd4",
+          title: "Material UI"
         }
       ]
     },
     {
       _id: "S5",
-      title: "WEB",
+      title: "Data base",
       level: 1,
       subSkills: [
         {
           _id: "Se1",
-          title: "HTML5"
+          title: "SQL : Mysql"
         },
         {
           _id: "Se2",
-          title: "CSS3"
-        },
-        {
-          _id: "Se3",
-          title: "SQL"
-        },
-        {
-          _id: "Se4",
-          title: "NoSQL"
+          title: "NoSQL : MongoDB"
         }
       ]
     },
@@ -1398,37 +1371,10 @@ export const engProfile = {
         {
           _id: "Sg5",
           title: "Github / Gitlab"
-        }
-      ]
-    },
-    {
-      _id: "S8",
-      title: "Other skills",
-      level: 3,
-      subSkills: [
+        },
         {
-          _id: "Sh1",
+          _id: "Sg6",
           title: "Bush_unix"
-        },
-        {
-          _id: "Sh2",
-          title: "SSH"
-        },
-        {
-          _id: "Sh3",
-          title: "Distributed systems"
-        },
-        {
-          _id: "Sh4",
-          title: "Cryptography"
-        },
-        {
-          _id: "Sh5",
-          title: "Applied Math"
-        },
-        {
-          _id: "Sh6",
-          title: "Linear programming"
         }
       ]
     }
