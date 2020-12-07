@@ -30,8 +30,58 @@ export const frProfile = {
       location: "Rabat - Maroc",
       tasks: [
         {
-          _id: "T1",
-          text: "Environnement technique: JavaScript (ES6+) / React / Redux / Redux Thunk / Axios / Webpack / Babel / NPM / Docker / Git / Bitbucket / Jira"
+          _id: "T01",
+          text: "Projet e-commerce mondial, collaboration avec des personnes de plus de 40 pays."
+        },
+        {
+          _id: "T02",
+          text: "Évolution & maintenance, conception & développement des fonctionnalités."
+        }
+      ],
+      technologies: [
+        {
+          _id: "S01",
+          text: "JavaScript (ES6+)"
+        },
+        {
+          _id: "S02",
+          text: "React"
+        },
+        {
+          _id: "S03",
+          text: "Redux"
+        },
+        {
+          _id: "S04",
+          text: "Redux Thunk"
+        },
+        {
+          _id: "S05",
+          text: "Axios"
+        },
+        {
+          _id: "S06",
+          text: "Webpack"
+        },
+        {
+          _id: "S07",
+          text: "Babel"
+        },
+        {
+          _id: "S08",
+          text: "Docker"
+        },
+        {
+          _id: "S09",
+          text: "Git"
+        },
+        {
+          _id: "S010",
+          text: "Bitbucket"
+        },
+        {
+          _id: "S011",
+          text: "Jira"
         }
       ]
     },
@@ -56,7 +106,7 @@ export const frProfile = {
       technologies: [
         {
           _id: "Sa1",
-          text: "JavaScript"
+          text: "JavaScript (ES6+)"
         },
         {
           _id: "Sa2",
@@ -77,7 +127,7 @@ export const frProfile = {
         {
           _id: "Sa6",
           text: "MongoDB"
-        },
+        }
       ]
     },
     {
@@ -126,6 +176,14 @@ export const frProfile = {
         {
           _id: "Sb5",
           text: "Laravel"
+        },
+        {
+          _id: "Sb6",
+          text: "Git"
+        },
+        {
+          _id: "Sb7",
+          text: "GitLab"
         }
       ]
     },
@@ -191,6 +249,14 @@ export const frProfile = {
         {
           _id: "Sc6",
           text: "MySQL"
+        },
+        {
+          _id: "Sc7",
+          text: "Git"
+        },
+        {
+          _id: "Sc8",
+          text: "GitLab"
         }
       ]
     },
@@ -740,8 +806,58 @@ export const engProfile = {
       location: "Rabat - Morocco",
       tasks: [
         {
-          _id: "T1",
-          text: "Technical Environment: JavaScript (ES6+) / React / Redux / Redux Thunk / Axios / Webpack / Babel / NPM / Docker / Git / Bitbucket / Jira"
+          _id: "T01",
+          text: "E-Commerce project, worldwide context, collaborate with people from more than 40 countries."
+        },
+        {
+          _id: "T02",
+          text: "Evolution & Maintenance, Feature design and development, Troubleshooting."
+        }
+      ],
+      technologies: [
+        {
+          _id: "S01",
+          text: "JavaScript (ES6+)"
+        },
+        {
+          _id: "S02",
+          text: "React"
+        },
+        {
+          _id: "S03",
+          text: "Redux"
+        },
+        {
+          _id: "S04",
+          text: "Redux Thunk"
+        },
+        {
+          _id: "S05",
+          text: "Axios"
+        },
+        {
+          _id: "S06",
+          text: "Webpack"
+        },
+        {
+          _id: "S07",
+          text: "Babel"
+        },
+        {
+          _id: "S08",
+          text: "Docker"
+        },
+        {
+          _id: "S09",
+          text: "Git"
+        },
+        {
+          _id: "S010",
+          text: "Bitbucket"
+        },
+        {
+          _id: "S011",
+          text: "Jira"
         }
       ]
     },
@@ -766,7 +882,7 @@ export const engProfile = {
       technologies: [
         {
           _id: "Sa1",
-          text: "JavaScript"
+          text: "JavaScript (ES6+)"
         },
         {
           _id: "Sa2",
@@ -787,7 +903,7 @@ export const engProfile = {
         {
           _id: "Sa6",
           text: "MongoDB"
-        },
+        }
       ]
     },
     {
@@ -836,6 +952,14 @@ export const engProfile = {
         {
           _id: "Sb5",
           text: "Laravel"
+        },
+        {
+          _id: "Sb6",
+          text: "Git"
+        },
+        {
+          _id: "Sb7",
+          text: "GitLab"
         }
       ]
     },
@@ -901,6 +1025,14 @@ export const engProfile = {
         {
           _id: "Sc6",
           text: "MySQL"
+        },
+        {
+          _id: "Sc7",
+          text: "Git"
+        },
+        {
+          _id: "Sc8",
+          text: "GitLab"
         }
       ]
     },
