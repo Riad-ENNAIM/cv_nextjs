@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import Link from 'next/link';
 import Rating from '../utils/Rating';
+import CounterLoader from '../utils/CounterLoader';
 
 import ProfileContext from '../../context/profile/profileContext';
 import ReviewContext from '../../context/review/reviewContext';
@@ -36,7 +37,12 @@ const HeaderRating = () => {
 
   return (
     <div className="main-rating">
-      <h1>{globalRating.toFixed(1)}</h1>
+      {
+        globalRating ?
+          <h1>{globalRating.toFixed(1)}</h1>
+        : 
+          <CounterLoader />
+      }
       <Rating rating={globalRating} />
       <Link href="/reviews"><a>{language === 'en' ? 'Evaluation' : 'Évaluation'}</a></Link>
     </div>
