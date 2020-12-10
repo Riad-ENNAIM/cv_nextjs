@@ -88,7 +88,7 @@ const Review = ({ review }) => {
       } else {
         // Months
         const numberOfUnits = Math.round(diffTime / (1000 * 60 * 60 * 24 * 30));
-        setDiffDate(`${numberOfUnits} ${language === 'en' ? 'month' : 'mois'}`);
+        setDiffDate(`${numberOfUnits} ${language === 'en' ? `month${numberOfUnits > 1 ? 's' : ''}` : 'mois'}`);
       }
     }
   }
