@@ -24,7 +24,7 @@ const letterColors = {
   w: 'CD5',
   x: 'AB6',
   y: 'ABC',
-  z: '678'
+  z: '678',
 };
 
 export default letterColors;

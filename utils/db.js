@@ -15,6 +15,6 @@ const connectDB = async () => {
   });
 
   connection.isConnected = db.connections[0].readyState;
-}
+};
 
 export default connectDB;

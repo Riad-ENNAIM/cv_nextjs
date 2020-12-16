@@ -5,11 +5,36 @@ const useFormatDate = (date) => {
   const profileContext = useContext(ProfileContext);
   const { language } = profileContext;
 
-  if(!date)
-    return null;
+  if (!date) return null;
 
-  const engMonthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const frMonthNames = ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+  const engMonthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  const frMonthNames = [
+    'Janvier',
+    'Fevrier',
+    'Mars',
+    'Avril',
+    'Mai',
+    'Juin',
+    'Juillet',
+    'Août',
+    'Septembre',
+    'Octobre',
+    'Novembre',
+    'Décembre',
+  ];
 
   const monthNames = language === 'en' ? engMonthNames : frMonthNames;
 
@@ -19,6 +44,6 @@ const useFormatDate = (date) => {
   //   return monthNames[d.getMonth()];
 
   return `${monthNames[d.getMonth()]} ${d.getFullYear()}`;
-}
+};
 
 export default useFormatDate;

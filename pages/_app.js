@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 
+import PropTypes from 'prop-types';
+
 import Layout from '../components/layout/Layout';
 
 import ProfileState from '../context/profile/ProfileState';
@@ -17,4 +19,9 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+MyApp.propTypes = {
+  Component: PropTypes.func.isRequired,
+  pageProps: PropTypes.object.isRequired,
+};
+
+export default MyApp;

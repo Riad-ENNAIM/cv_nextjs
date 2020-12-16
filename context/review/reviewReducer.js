@@ -1,10 +1,4 @@
-import {
-  ADD_REVIEW,
-  GET_REVIEWS,
-  DELETE_REVIEW,
-  REVIEW_ERROR,
-  TOGGLE_FORM
-} from '../types';
+import { ADD_REVIEW, GET_REVIEWS, DELETE_REVIEW, REVIEW_ERROR, TOGGLE_FORM } from '../types';
 
 const reviewReducer = (state, action) => {
   switch (action.type) {
@@ -14,7 +8,7 @@ const reviewReducer = (state, action) => {
         reviews: action.payload,
         showForm: action.payload.length === 0,
         isLoading: false,
-        errors: null
+        errors: null,
       };
 
     case ADD_REVIEW:
@@ -24,16 +18,16 @@ const reviewReducer = (state, action) => {
         isDeletable: true,
         showForm: false,
         isLoading: false,
-        errors: null
+        errors: null,
       };
 
     case DELETE_REVIEW:
       return {
         ...state,
-        reviews: state.reviews.filter(review => review._id !== action.payload),
+        reviews: state.reviews.filter((review) => review._id !== action.payload),
         showForm: false,
         isLoading: false,
-        errors: null
+        errors: null,
       };
 
     case TOGGLE_FORM:
@@ -41,18 +35,18 @@ const reviewReducer = (state, action) => {
         ...state,
         showForm: !state.showForm,
         isLoading: false,
-        errors: null
+        errors: null,
       };
 
     case REVIEW_ERROR:
       return {
         ...state,
-        errors: action.payload
+        errors: action.payload,
       };
-  
+
     default:
       return state;
   }
-}
+};
 
 export default reviewReducer;

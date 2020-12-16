@@ -3,21 +3,21 @@ const mongoose = require('mongoose');
 const ReviewSchema = mongoose.Schema({
   username: {
     type: String,
-    required: true
+    required: true,
   },
   comment: {
-    type: String
+    type: String,
   },
   link: {
-    type: String
+    type: String,
   },
   rating: {
-    type: Number
+    type: Number,
   },
   date: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
 
 module.exports = mongoose.models.review || mongoose.model('review', ReviewSchema);

@@ -5,22 +5,22 @@ connectDB();
 
 export default async (req, res) => {
   const {
-      query: { id },
-      method
+    query: { id },
+    method,
   } = req;
 
   switch (method) {
     case 'GET':
       try {
-          const review = await Review.findById(id);
+        const review = await Review.findById(id);
 
-          if (!review) {
-              return res.status(400).send('Server Error');
-          }
+        if (!review) {
+          return res.status(400).send('Server Error');
+        }
 
-          res.status(200).json(review);
+        res.status(200).json(review);
       } catch (error) {
-          res.status(400).send('Server Error');
+        res.status(400).send('Server Error');
       }
       break;
 
@@ -43,15 +43,15 @@ export default async (req, res) => {
 
     case 'DELETE':
       try {
-          const deletedReview = await Review.deleteOne({ _id: id });
+        const deletedReview = await Review.deleteOne({ _id: id });
 
-          if (!deletedReview) {
-              return res.status(400).send('Server Error');
-          }
+        if (!deletedReview) {
+          return res.status(400).send('Server Error');
+        }
 
-          res.status(200).json({ msg: 'Review removed' });
+        res.status(200).json({ msg: 'Review removed' });
       } catch (error) {
-          res.status(400).send('Server Error');
+        res.status(400).send('Server Error');
       }
       break;
 
@@ -59,4 +59,4 @@ export default async (req, res) => {
       res.status(400).send('Server Error');
       break;
   }
-}
+};

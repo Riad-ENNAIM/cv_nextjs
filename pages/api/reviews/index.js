@@ -31,4 +31,4 @@ export default async (req, res) => {
       res.status(400).send('Server Error');
       break;
   }
-}
+};
