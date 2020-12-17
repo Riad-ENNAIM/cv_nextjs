@@ -34,7 +34,6 @@ const DropDownList = () => {
               onClick={() => changeLang('fr')}
               role="checkbox"
               aria-checked="false"
-              aria-labelledby="foo"
               tabIndex="0"
             >
               Fr
@@ -44,7 +43,6 @@ const DropDownList = () => {
               onClick={() => changeLang('en')}
               role="checkbox"
               aria-checked="false"
-              aria-labelledby="foo"
               tabIndex="0"
             >
               Eng

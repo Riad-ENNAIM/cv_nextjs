@@ -13,10 +13,6 @@ const ReviewForm = () => {
 
   const formRef = useRef(null);
 
-  useEffect(() => {
-    formRef.current.scrollIntoView({ behavior: 'smooth' });
-  }, []);
-
   const [review, setReview] = useState({
     username: '',
     comment: '',
@@ -30,6 +26,10 @@ const ReviewForm = () => {
   const [isTypingComment, setIsTypingComment] = useState(true);
   const [isSending, setIsSending] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+
+  useEffect(() => {
+    formRef.current.scrollIntoView({ behavior: 'smooth' });
+  }, []);
 
   const onChange = (e) => setReview({ ...review, [e.target.name]: e.target.value });
 

@@ -68,7 +68,6 @@ const Footer = () => {
           title={language === 'en' ? 'Passer au Français' : 'Switch to English'}
           role="checkbox"
           aria-checked="false"
-          aria-labelledby="foo"
           tabIndex="0"
         >
           <i aria-hidden className="fas fa-globe-africa" />
