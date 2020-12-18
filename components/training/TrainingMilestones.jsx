@@ -22,9 +22,10 @@ const TrainingMilestones = () => {
     <ul className="milestone">
       {profile.trainings.map((training) => {
         const milestone = {
+          type: 'TRAINING',
           title: training.school,
           info: training.title,
-          type: training.location,
+          description: training.location,
           start: training.start,
           isCurrent: training.isCurrent,
         };

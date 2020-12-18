@@ -16,7 +16,15 @@ const Card = ({ data }) => {
     <div className="card">
       <div className="card-header">
         <h3 className="card-title">{data.title}</h3>
-        {data.isCurrent && <span className="tag-flash">En cours</span>}
+        {data.isCurrent && (
+          <span className="tag-flash">
+            {language === 'en'
+              ? data.type === 'TRAINING'
+                ? 'In progress'
+                : 'Current'
+              : 'En cours'}
+          </span>
+        )}
       </div>
 
       <div className="card-body">

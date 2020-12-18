@@ -19,6 +19,7 @@ const Experiences = () => {
 
   return profile.experiences.map((experience) => {
     const data = {
+      type: 'EXPERIENCE',
       title: experience.title,
       description: experience.company,
       info: experience.location,

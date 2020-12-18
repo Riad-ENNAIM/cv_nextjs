@@ -22,9 +22,10 @@ const ExperienceMilestones = () => {
     <ul className="milestone">
       {profile.experiences.map((experience) => {
         const milestone = {
+          type: 'EXPERIENCE',
           title: experience.company,
           info: experience.title,
-          type: experience.location,
+          description: experience.location,
           start: experience.start,
           isCurrent: experience.isCurrent,
         };

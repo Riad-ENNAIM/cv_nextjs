@@ -19,6 +19,7 @@ const Projects = () => {
 
   return profile.projects.map((project) => {
     const data = {
+      type: 'PROJECT',
       title: project.title,
       description: project.client,
       info: project.technology,

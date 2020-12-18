@@ -19,6 +19,7 @@ const Training = () => {
 
   return profile.trainings.map((training) => {
     const data = {
+      type: 'TRAINING',
       title: training.title,
       description: training.school,
       info: training.location,
