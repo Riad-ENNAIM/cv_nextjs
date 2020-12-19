@@ -1,0 +1,772 @@
+{
+  "name": "Riad ENNAIM",
+  "title": "Développeur Full Stack JavaScript",
+  "description": "Développeur full stack, passionné par la programmation des applications et le développement web, spécialisé principalement dans JavaScript: React & Node.js. Je suis également imprégné d'un fort désir d'apprendre et d'évoluer dans ma vie quotidienne.",
+  "location": "Marrakech, Maroc",
+  "email": "riad.ennaim@gmail.com",
+  "phone": "+212694590864",
+  "links": [
+    {
+      "name": "GitHub",
+      "path": "https://github.com/Riad-ENNAIM/"
+    },
+    {
+      "name": "Linkedin",
+      "path": "https://www.linkedin.com/in/riad-ennaim/"
+    },
+    {
+      "name": "Bio",
+      "path": "https://riad-ennaim.github.io/bio/"
+    }
+  ],
+  "experiences": [
+    {
+      "_id": "E0",
+      "isCurrent": true,
+      "title": "Développeur Front End",
+      "company": "SQLI",
+      "start": "2020-05-01T17:16:40.606+00:00",
+      "location": "Rabat - Maroc",
+      "tasks": [
+        {
+          "_id": "T01",
+          "text": "Projet e-commerce mondial, collaboration avec des personnes de plus de 40 pays."
+        },
+        {
+          "_id": "T02",
+          "text": "Évolution & maintenance, conception & développement des fonctionnalités."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "S01",
+          "text": "JavaScript (ES6+)"
+        },
+        {
+          "_id": "S02",
+          "text": "React"
+        },
+        {
+          "_id": "S03",
+          "text": "Redux"
+        },
+        {
+          "_id": "S04",
+          "text": "Redux Thunk"
+        },
+        {
+          "_id": "S05",
+          "text": "Axios"
+        },
+        {
+          "_id": "S06",
+          "text": "Webpack"
+        },
+        {
+          "_id": "S07",
+          "text": "Babel"
+        },
+        {
+          "_id": "S08",
+          "text": "Docker"
+        },
+        {
+          "_id": "S09",
+          "text": "Git"
+        },
+        {
+          "_id": "S010",
+          "text": "Bitbucket"
+        },
+        {
+          "_id": "S011",
+          "text": "Jira"
+        }
+      ]
+    },
+    {
+      "_id": "E1",
+      "isCurrent": false,
+      "title": "Développeur Full Stack JavaScript",
+      "company": "Université Mohammed VI Polytechnique (AgriEdge – OCP)",
+      "start": "2019-10-01T17:16:40.606+00:00",
+      "end": "2020-03-30T17:16:40.606+00:00",
+      "location": "Ben Guerir - Maroc",
+      "tasks": [
+        {
+          "_id": "Ta1",
+          "text": "Conception et développement d'une plate-forme de services dans l'agriculture de précision qui offre des solutions conviviales aux agriculteurs, afin d'améliorer leur rentabilité."
+        },
+        {
+          "_id": "Ta2",
+          "text": "Utilisation de données collectées via des capteurs, des images satellites ou des images de drones que nous valorisons à l'aide de modèles algorithmiques et de connaissances agronomiques afin de recommander aux agriculteurs de rationaliser les coûts des intrants agricoles."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "Sa1",
+          "text": "JavaScript (ES6+)"
+        },
+        {
+          "_id": "Sa2",
+          "text": "React"
+        },
+        {
+          "_id": "Sa3",
+          "text": "Angular"
+        },
+        {
+          "_id": "Sa4",
+          "text": "Node.js"
+        },
+        {
+          "_id": "Sa5",
+          "text": "Express.js"
+        },
+        {
+          "_id": "Sa6",
+          "text": "MongoDB"
+        }
+      ]
+    },
+    {
+      "_id": "E2",
+      "isCurrent": false,
+      "title": "Développeur Full Stack Web & Mobile",
+      "company": "Pulse Digital Maroc",
+      "start": "2019-01-01T17:16:40.606+00:00",
+      "end": "2019-09-30T17:16:40.606+00:00",
+      "location": "Marrakech - Maroc",
+      "tasks": [
+        {
+          "_id": "Tb1",
+          "text": "Développement d'une application de demande des prestations, pour de petits travaux et services à domicile, permet de trouver rapidement des spécialistes à proximité."
+        },
+        {
+          "_id": "Tb2",
+          "text": "Authentification avec Facebook."
+        },
+        {
+          "_id": "Tb3",
+          "text": "Système de notification."
+        },
+        {
+          "_id": "Tb4",
+          "text": "Modification de la partie back-office."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "Sb1",
+          "text": "JavaScript"
+        },
+        {
+          "_id": "Sb2",
+          "text": "React"
+        },
+        {
+          "_id": "Sb3",
+          "text": "React Native"
+        },
+        {
+          "_id": "Sb4",
+          "text": "PHP"
+        },
+        {
+          "_id": "Sb5",
+          "text": "Laravel"
+        },
+        {
+          "_id": "Sb6",
+          "text": "Git"
+        },
+        {
+          "_id": "Sb7",
+          "text": "GitLab"
+        }
+      ]
+    },
+    {
+      "_id": "E3",
+      "isCurrent": false,
+      "title": "Développeur WEB - PHP & JavaScript",
+      "company": "Pulse Digital Maroc",
+      "start": "2017-09-01T17:16:40.606+00:00",
+      "end": "2018-12-30T17:16:40.606+00:00",
+      "location": "Marrakech - Maroc",
+      "tasks": [
+        {
+          "_id": "Tc1",
+          "text": "Maintenance d'une application web : CRM de la société (Brain - V1)."
+        },
+        {
+          "_id": "Tc2",
+          "text": "Conception et création d'une application de gestion des projets : réutilisation des données obtenues du CRM."
+        },
+        {
+          "_id": "Tc3",
+          "text": "Conception du back-office Craft CMS pour la création de la nouvelle version du site web de la société."
+        },
+        {
+          "_id": "Tc4",
+          "text": "Conception et création de la deuxième version du CRM (Brain - V2)."
+        },
+        {
+          "_id": "Tc5",
+          "text": "Accompagnement et gestion d'une équipe des stagiaires."
+        },
+        {
+          "_id": "Tc6",
+          "text": "Conception et développement de la partie back-office d'une application e-commerce avec Laravel : dynamisation des informations affichées au front-office."
+        },
+        {
+          "_id": "Tc7",
+          "text": "Maintenance d'un site e-commerce et traitement des retours du client."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "Sc1",
+          "text": "JavaScript"
+        },
+        {
+          "_id": "Sc2",
+          "text": "jQuery"
+        },
+        {
+          "_id": "Sc3",
+          "text": "PHP"
+        },
+        {
+          "_id": "Sc4",
+          "text": "Laravel"
+        },
+        {
+          "_id": "Sc5",
+          "text": "Symfony"
+        },
+        {
+          "_id": "Sc6",
+          "text": "MySQL"
+        },
+        {
+          "_id": "Sc7",
+          "text": "Git"
+        },
+        {
+          "_id": "Sc8",
+          "text": "GitLab"
+        }
+      ]
+    },
+    {
+      "_id": "E4",
+      "isCurrent": false,
+      "title": "Développeur WEB - Laravel",
+      "company": "Freelance",
+      "start": "2017-12-01T17:16:40.606+00:00",
+      "end": "2018-04-30T17:16:40.606+00:00",
+      "location": "Marrakech - Maroc",
+      "tasks": [
+        {
+          "_id": "Td1",
+          "text": "Conception et création d'une application web pour la gestion des rendez-vous médicaux en ligne."
+        },
+        {
+          "_id": "Td2",
+          "text": "Fournir une application de gestion (RH & Rendez-vous) aux cabinets inscrits."
+        },
+        {
+          "_id": "Td3",
+          "text": "Une page ouverte aux clients pour la recherche des cabinets, suivant l'adresse ou la spécialité."
+        },
+        {
+          "_id": "Td4",
+          "text": "Fournir au client une interface pour prendre un rendez-vous."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "Sd1",
+          "text": "HTML5"
+        },
+        {
+          "_id": "Sd2",
+          "text": "CSS3"
+        },
+        {
+          "_id": "Sd3",
+          "text": "PHP"
+        },
+        {
+          "_id": "Sd4",
+          "text": "Laravel"
+        }
+      ]
+    },
+    {
+      "_id": "E5",
+      "isCurrent": false,
+      "title": "Développeur WEB - Laravel (Stage)",
+      "company": "Pulse Digital Maroc",
+      "start": "2017-07-01T17:16:40.606+00:00",
+      "end": "2017-09-30T17:16:40.606+00:00",
+      "location": "Marrakech - Maroc",
+      "tasks": [
+        {
+          "_id": "Te1",
+          "text": "Conception et développement d'une application web de gestion des projets permet le suivit quotidien des tâches des développeurs et les projets au sein de l'entreprise."
+        },
+        {
+          "_id": "Te2",
+          "text": "Implémentation de la méthodologie scrum."
+        },
+        {
+          "_id": "Te3",
+          "text":"Un système de points dynamique pour chaque utilisateur, en se basant sur les tâches réalisées et ce qui est planifié."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "Se1",
+          "text": "HTML5"
+        },
+        {
+          "_id": "Se2",
+          "text": "CSS3"
+        },
+        {
+          "_id": "Se3",
+          "text": "Bootstrap"
+        },
+        {
+          "_id": "Se4",
+          "text": "JavaScript"
+        },
+        {
+          "_id": "Se5",
+          "text": "jQuery"
+        },
+        {
+          "_id": "Se6",
+          "text": "PHP"
+        },
+        {
+          "_id": "Se7",
+          "text": "Laravel"
+        }
+      ]
+    },
+    {
+      "_id": "E6",
+      "isCurrent": false,
+      "title": "Développeur WEB - PHP (Stage)",
+      "company": "L’Office Chérifien des Phosphates (OCP S.A)",
+      "start": "2016-08-01T17:16:40.606+00:00",
+      "end": "2016-09-30T17:16:40.606+00:00",
+      "location": "Yousoufia - Maroc",
+      "tasks": [
+        {
+          "_id": "Tf1",
+          "text": "Développement d'une application web de gestion de la permanence en PHP."
+        },
+        {
+          "_id": "Tf2",
+          "text": "Réalisation d'un cahier de charge pour l'application."
+        },
+        {
+          "_id": "Tf3",
+          "text": "Proposition d'un diagramme de GANTT pour le respect du temps."
+        },
+        {
+          "_id": "Tf4",
+          "text": "Intégration avec l’équipe de travail."
+        }
+      ],
+      "technologies": [
+        {
+          "_id": "Sf1",
+          "text": "HTML5"
+        },
+        {
+          "_id": "Sf2",
+          "text": "CSS3"
+        },
+        {
+          "_id": "Sf3",
+          "text": "PHP"
+        },
+        {
+          "_id": "Sf4",
+          "text": "MySQL"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "_id": "P1",
+      "isCurrent": false,
+      "title": "Gestion des contacts",
+      "client": "Autoformation",
+      "start": "2020-02-01T17:16:40.606+00:00",
+      "end": "2020-03-30T17:16:40.606+00:00",
+      "technology": "MERN Stack",
+      "tasks": [
+        {
+          "_id": "Tpa1",
+          "text": "Conception et développement d'une application web de gestion des contact"
+        },
+        {
+          "_id": "Tpa2",
+          "text": "Implémentation des nouveautés du React 16.13"
+        },
+        {
+          "_id": "Tpa3",
+          "text": "MERN Stack: MongoDB, Express.js, React, Node.js"
+        }
+      ]
+    },
+    {
+      "_id": "P2",
+      "isCurrent": false,
+      "title": "Wallet: Suivi des dépenses",
+      "client": "Autoformation",
+      "start": "2020-01-10T17:16:40.606+00:00",
+      "technology": "React",
+      "tasks": [
+        {
+          "_id": "Tpb1",
+          "text": "Développement d'une application web de suivi des dépenses"
+        },
+        {
+          "_id": "Tpb2",
+          "text": "Implémentation des Hooks & Context API"
+        }
+      ]
+    },
+    {
+      "_id": "P3",
+      "isCurrent": false,
+      "title": "App Mobile: Timesheet",
+      "client": "Autoformation",
+      "start": "2019-03-01T17:16:40.606+00:00",
+      "end": "2019-05-20T17:16:40.606+00:00",
+      "technology": "React Native",
+      "tasks": [
+        {
+          "_id": "Tpc1",
+          "text": "Développement d'une application mobile de gestion de timesheet"
+        },
+        {
+          "_id": "Tpc2",
+          "text": "Représentation graphique de l'emplois du temps: tâches réalisées et planifiées"
+        },
+        {
+          "_id": "Tpc3",
+          "text": "Système de notification et accompagnement de l'utilisateur pour faire son timesheet à temps"
+        }
+      ]
+    },
+    {
+      "_id": "P4",
+      "isCurrent": false,
+      "title": "Todo List",
+      "client": "Autoformation",
+      "start": "2019-01-20T17:16:40.606+00:00",
+      "technology": "React",
+      "tasks": [
+        {
+          "_id": "Tpd1",
+          "text": "Obtenez des tâches à partir d'une API externe"
+        },
+        {
+          "_id": "Tpd2",
+          "text": "Compter, chercher et filtrer par état: tous, actifs, terminés"
+        },
+        {
+          "_id": "Tpd3",
+          "text": "Créer, mettre à jour et supprimer une tâche dans la liste"
+        },
+        {
+          "_id": "Tpd4",
+          "text": "Implémentation de Redux"
+        }
+      ]
+    },
+    {
+      "_id": "P5",
+      "isCurrent": false,
+      "title": "Application P2P de Messagerie Instantanée",
+      "client": "L’École National des Sciences Appliquées (ENSA)",
+      "start": "2018-04-01T17:16:40.606+00:00",
+      "end": "2018-06-30T17:16:40.606+00:00",
+      "technology": "Java",
+      "tasks": [
+        {
+          "_id": "Tpe1",
+          "text": "Conception et développement d'une application distribuée P2P de messagerie instantanée."
+        },
+        {
+          "_id": "Tpe2",
+          "text": "Résoudre les problèmes liés à la traversée des NATs."
+        }
+      ]
+    },
+    {
+      "_id": "P6",
+      "isCurrent": false,
+      "title": "Application Mobile Hybride",
+      "client": "L’École National des Sciences Appliquées (ENSA)",
+      "start": "2017-03-01T17:16:40.606+00:00",
+      "end": "2017-06-30T17:16:40.606+00:00",
+      "technology": "Ionic & Spring Boot",
+      "tasks": [
+        {
+          "_id": "Tpf1",
+          "text": "Chercher pour un produit donné (code barre) le lieu où il est le moins cher."
+        },
+        {
+          "_id": "Tpf2",
+          "text": "Créer l'application web et l'API RestFul avec Spring Boot."
+        },
+        {
+          "_id": "Tpf3",
+          "text": "Créer l'application mobile avec Ionic & Cordova."
+        }
+      ]
+    },
+    {
+      "_id": "P7",
+      "isCurrent": false,
+      "title": "Application Client Messagerie",
+      "client": "L’École National des Sciences Appliquées (ENSA)",
+      "start": "2016-12-01T17:16:40.606+00:00",
+      "end": "2017-02-28T17:16:40.606+00:00",
+      "technology": "Java",
+      "tasks": [
+        {
+          "_id": "Tpg1",
+          "text": "Développement d'une application client messagerie avec l'API JavaMail."
+        },
+        {
+          "_id": "Tpg2",
+          "text": "Application du design pattern DAO."
+        },
+        {
+          "_id": "Tpg3",
+          "text": "Se familiariser avec l’API JavaMail et les protocoles (POP, SMTP)."
+        }
+      ]
+    },
+    {
+      "_id": "P8",
+      "isCurrent": false,
+      "title": "Jeu des Dames",
+      "client": "L’École National des Sciences Appliquées (ENSA)",
+      "start": "2016-04-01T17:16:40.606+00:00",
+      "end": "2016-06-30T17:16:40.606+00:00",
+      "technology": "C++ & Qt",
+      "tasks": [
+        {
+          "_id": "Tph1",
+          "text": "Développement d'un jeu des dames en C++ et Qt."
+        },
+        {
+          "_id": "Tph2",
+          "text": "Réalisation d'un cahier de charge pour l'application."
+        },
+        {
+          "_id": "Tph3",
+          "text": "Travail en groupe."
+        },
+        {
+          "_id": "Tph4",
+          "text": "Rédaction des rapports."
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "_id": "S1",
+      "title": "JavaScript",
+      "level": 1,
+      "subSkills": [
+        {
+          "_id": "Sa1",
+          "title": "React"
+        },
+        {
+          "_id": "Sa2",
+          "title": "Next.js"
+        },
+        {
+          "_id": "Sa3",
+          "title": "React Native"
+        },
+        {
+          "_id": "Sa4",
+          "title": "Node.js"
+        },
+        {
+          "_id": "Sa5",
+          "title": "Express"
+        }
+      ]
+    },
+    {
+      "_id": "S2",
+      "title": "JavaScript",
+      "level": 2,
+      "subSkills": [
+        {
+          "_id": "Sb1",
+          "title": "Angular"
+        },
+        {
+          "_id": "Sb2",
+          "title": "Ionic"
+        }
+      ]
+    },
+    {
+      "_id": "S3",
+      "title": "PHP",
+      "level": 2,
+      "subSkills": [
+        {
+          "_id": "Sc1",
+          "title": "Laravel"
+        },
+        {
+          "_id": "Sc2",
+          "title": "Symfony"
+        }
+      ]
+    },
+    {
+      "_id": "S4",
+      "title": "Markup & Style",
+      "level": 1,
+      "subSkills": [
+        {
+          "_id": "Sd1",
+          "title": "HTML5"
+        },
+        {
+          "_id": "Sd2",
+          "title": "CSS3"
+        },
+        {
+          "_id": "Sd3",
+          "title": "Bootstrap"
+        },
+        {
+          "_id": "Sd4",
+          "title": "Material UI"
+        }
+      ]
+    },
+    {
+      "_id": "S5",
+      "title": "Base de données",
+      "level": 1,
+      "subSkills": [
+        {
+          "_id": "Se1",
+          "title": "SQL : Mysql"
+        },
+        {
+          "_id": "Se2",
+          "title": "NoSQL : MongoDB"
+        }
+      ]
+    },
+    {
+      "_id": "S6",
+      "title": "Systèmes d’exploitation",
+      "level": 2,
+      "subSkills": [
+        {
+          "_id": "Sf1",
+          "title": "Mac OS"
+        },
+        {
+          "_id": "Sf2",
+          "title": "Windows"
+        },
+        {
+          "_id": "Sf3",
+          "title": "Unix / Linux"
+        }
+      ]
+    },
+    {
+      "_id": "S7",
+      "title": "Autres compétences",
+      "level": 2,
+      "subSkills": [
+        {
+          "_id": "Sg1",
+          "title": "Agile / Scrum"
+        },
+        {
+          "_id": "Sg2",
+          "title": "Algorithmique"
+        },
+        {
+          "_id": "Sg3",
+          "title": "Design patterns"
+        },
+        {
+          "_id": "Sg4",
+          "title": "Git"
+        },
+        {
+          "_id": "Sg5",
+          "title": "Github / Gitlab"
+        },
+        {
+          "_id": "Sg6",
+          "title": "Bush_unix"
+        }
+      ]
+    }
+  ],
+  "trainings": [
+    {
+      "_id": "T1",
+      "isCurrent": true,
+      "title": "Développement Full Stack JavaScript WEB & Mobile",
+      "school": "Autoformation",
+      "start": "2019-01-01T17:16:40.606+00:00"
+    },
+    {
+      "_id": "T2",
+      "isCurrent": false,
+      "title": "Cycle Ingénieur d’Etat en Informatique",
+      "school": "L’École National des Sciences Appliquées (ENSA)",
+      "start": "2015-09-01T17:16:40.606+00:00",
+      "end": "2019-05-30T17:16:40.606+00:00",
+      "location": "Marrakech - Maroc"
+    },
+    {
+      "_id": "T3",
+      "isCurrent": false,
+      "title": "Cycle Préparatoire",
+      "school": "L’École National des Sciences Appliquées (ENSA)",
+      "start": "2012-09-01T17:16:40.606+00:00",
+      "end": "2015-06-30T17:16:40.606+00:00",
+      "location": "Marrakech - Maroc"
+    },
+    {
+      "_id": "T4",
+      "isCurrent": false,
+      "title": "Baccalauréat Sciences Mathématiques B",
+      "school": "Jaber Ben Hayan",
+      "start": "2012-06-30T17:16:40.606+00:00",
+      "location": "Youssoufia - Maroc"
+    }
+  ]
+}

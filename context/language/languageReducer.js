@@ -1,5 +1,5 @@
 import { TOGGLE_LANGUAGE } from '../types';
-import dictionaryList from '../../data/lang';
+import dictionaryLanguages from '../../data/lang';
 
 const languageReducer = (state, action) => {
   switch (action.type) {
@@ -7,7 +7,7 @@ const languageReducer = (state, action) => {
       return {
         ...state,
         language: action.payload,
-        dictionary: dictionaryList[action.payload],
+        dictionary: dictionaryLanguages[action.payload],
       };
 
     default:

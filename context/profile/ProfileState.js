@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ProfileContext from './profileContext';
 import profileReducer from './profileReducer';
 import { GET_PROFILE, TOGGLE_TIMELINE, TOGGLE_DARK_MODE } from '../types';
-import { frProfile, engProfile } from '../../data/profile';
+import profileLanguages from '../../data/profile';
 
 const ProfileState = ({ children }) => {
   const initialState = {
@@ -17,7 +17,7 @@ const ProfileState = ({ children }) => {
 
   // Get Profile
   const getProfile = async (lang = 'en') => {
-    const profile = lang === 'en' ? engProfile : frProfile;
+    const profile = lang === 'en' ? profileLanguages.en : profileLanguages.fr;
 
     dispatch({
       type: GET_PROFILE,

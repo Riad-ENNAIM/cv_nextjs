@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import languageContext from './languageContext';
 import languageReducer from './languageReducer';
 import { TOGGLE_LANGUAGE } from '../types';
-import dictionaryList from '../../data/lang';
+import dictionaryLanguages from '../../data/lang';
 
 const LanguageState = ({ children }) => {
   const initialState = {
     language: 'en',
-    dictionary: dictionaryList.en,
+    dictionary: dictionaryLanguages.en,
   };
 
   const [state, dispatch] = useReducer(languageReducer, initialState);
