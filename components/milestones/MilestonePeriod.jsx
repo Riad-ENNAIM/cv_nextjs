@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import useFormatDate from '../../hooks/useFormatDate';
 import MilestoneAction from './MilestoneAction';
 
-import ProfileContext from '../../context/profile/profileContext';
+import LanguageContext from '../../context/language/languageContext';
 
 const MilestonePeriod = ({ milestone }) => {
-  const profileContext = useContext(ProfileContext);
-  const { language } = profileContext;
+  const languageContext = useContext(LanguageContext);
+  const { dictionary } = languageContext;
 
   const start = useFormatDate(milestone.start);
   const end = useFormatDate(milestone.end);
@@ -31,11 +31,7 @@ const MilestonePeriod = ({ milestone }) => {
 
       {milestone.isCurrent && (
         <div className="tag-flash">
-          {language === 'en'
-            ? milestone.type === 'TRAINING'
-              ? 'In progress'
-              : 'Current'
-            : 'En cours'}
+          {milestone.type === 'TRAINING' ? dictionary.inProgress : dictionary.current}
         </div>
       )}
     </li>

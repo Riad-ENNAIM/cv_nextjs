@@ -2,11 +2,11 @@ import { useEffect, useState, useContext, useRef } from 'react';
 import ActiveLink from '../utils/ActiveLink';
 import DropDownList from './DropDownList';
 
-import ProfileContext from '../../context/profile/profileContext';
+import LanguageContext from '../../context/language/languageContext';
 
 const Navbar = () => {
-  const profileContext = useContext(ProfileContext);
-  const { language } = profileContext;
+  const languageContext = useContext(LanguageContext);
+  const { dictionary } = languageContext;
 
   const [sticky, setSticky] = useState(false);
 
@@ -34,27 +34,27 @@ const Navbar = () => {
         </li>
         <li>
           <ActiveLink href="/" activeClassName="active">
-            <a href="/">{language === 'en' ? 'Experience' : 'Expérience'}</a>
+            <a href="/">{dictionary.experience}</a>
           </ActiveLink>
         </li>
         <li>
           <ActiveLink href="/projects" activeClassName="active">
-            <a href="/projects">{language === 'en' ? 'Projects' : 'Projets'}</a>
+            <a href="/projects">{dictionary.projects}</a>
           </ActiveLink>
         </li>
         <li>
           <ActiveLink href="/skills" activeClassName="active">
-            <a href="/skills">{language === 'en' ? 'Skills' : 'Compétence'}</a>
+            <a href="/skills">{dictionary.skills}</a>
           </ActiveLink>
         </li>
         <li>
           <ActiveLink href="/training" activeClassName="active">
-            <a href="/training">{language === 'en' ? 'Training' : 'Formation'}</a>
+            <a href="/training">{dictionary.training}</a>
           </ActiveLink>
         </li>
         <li>
           <ActiveLink href="/reviews" activeClassName="active">
-            <a href="/reviews">{language === 'en' ? 'Reviews' : 'Commentaires'}</a>
+            <a href="/reviews">{dictionary.reviews}</a>
           </ActiveLink>
         </li>
       </ul>

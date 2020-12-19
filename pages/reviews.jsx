@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react';
 import Reviews from '../components/reviews/Reviews';
 
 const ReviewsPage = () => {
-  const pageRef = useRef(null)
+  const pageRef = useRef(null);
 
   useEffect(() => {
-    if(pageRef.current.getBoundingClientRect().top <= 0) {
-      pageRef.current.scrollIntoView({ behavior: "smooth" });
+    if (pageRef.current.getBoundingClientRect().top <= 0) {
+      pageRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
 
@@ -15,6 +15,6 @@ const ReviewsPage = () => {
       <Reviews />
     </div>
   );
-}
+};
 
 export default ReviewsPage;

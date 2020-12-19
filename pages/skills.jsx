@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react';
 import Skills from '../components/skills/Skills';
 
 const SkillsPage = () => {
-  const pageRef = useRef(null)
+  const pageRef = useRef(null);
 
   useEffect(() => {
-    if(pageRef.current.getBoundingClientRect().top <= 0) {
-      pageRef.current.scrollIntoView({ behavior: "smooth" });
+    if (pageRef.current.getBoundingClientRect().top <= 0) {
+      pageRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
 
@@ -15,6 +15,6 @@ const SkillsPage = () => {
       <Skills />
     </div>
   );
-}
+};
 
 export default SkillsPage;

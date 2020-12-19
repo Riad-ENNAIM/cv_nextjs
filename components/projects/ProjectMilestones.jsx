@@ -3,14 +3,18 @@ import MilestonePeriod from '../milestones/MilestonePeriod';
 import MilestoneAction from '../milestones/MilestoneAction';
 import Loader from '../utils/Loader';
 
+import LanguageContext from '../../context/language/languageContext';
 import ProfileContext from '../../context/profile/profileContext';
 
 const ProjectMilestones = () => {
+  const languageContext = useContext(LanguageContext);
   const profileContext = useContext(ProfileContext);
-  const { profile, getProfile, isLoading, language } = profileContext;
+
+  const { language } = languageContext;
+  const { profile, getProfile, isLoading } = profileContext;
 
   useEffect(() => {
-    getProfile();
+    getProfile(language);
     // eslint-disable-next-line
   }, [language]);
 

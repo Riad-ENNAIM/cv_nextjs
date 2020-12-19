@@ -1,25 +1,23 @@
 import { useContext, useState } from 'react';
 import Link from 'next/link';
 
-import ProfileContext from '../../context/profile/profileContext';
+import LanguageContext from '../../context/language/languageContext';
 
 const Footer = () => {
-  const profileContext = useContext(ProfileContext);
-  const { language, toggleLanguage } = profileContext;
+  const languageContext = useContext(LanguageContext);
+  const { language, dictionary, toggleLanguage } = languageContext;
 
   const [newLanguage, setNewLanguage] = useState(false);
 
   return (
     <div id="main-footer">
       <a href="mailto:riad.ennaim@gmail.com">
-        {language === 'en'
-          ? 'Send me a mail for a new collaboration'
-          : 'Envoyez-moi un mail pour une nouvelle collaboration'}
+        {dictionary.emailMe}
         &nbsp;&#x1F60E;
       </a>
 
       <p>
-        {language === 'en' ? 'Sourced on' : 'Source sur'}
+        {dictionary.sourcedOn}
         &nbsp;
         <a href="https://github.com/Riad-ENNAIM/cv">GitHub</a>
       </p>
@@ -65,7 +63,7 @@ const Footer = () => {
           onClick={toggleLanguage}
           onMouseOut={() => setNewLanguage(!newLanguage)}
           onBlur={() => setNewLanguage(!newLanguage)}
-          title={language === 'en' ? 'Passer au Français' : 'Switch to English'}
+          title={dictionary.switchToOtherLanguage}
           role="checkbox"
           aria-checked="false"
           tabIndex="0"

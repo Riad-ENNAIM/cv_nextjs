@@ -2,15 +2,20 @@ import { useEffect, useContext, useState } from 'react';
 import Skill from './Skill';
 import Loader from '../utils/Loader';
 
+import LanguageContext from '../../context/language/languageContext';
 import ProfileContext from '../../context/profile/profileContext';
 
 const Skills = () => {
+  const languageContext = useContext(LanguageContext);
   const profileContext = useContext(ProfileContext);
-  const { profile, getProfile, isLoading, language } = profileContext;
+
+  const { language, dictionary } = languageContext;
+  const { profile, getProfile, isLoading } = profileContext;
+
   const [skillLevels, setSkillLevels] = useState([]);
 
   useEffect(() => {
-    getProfile();
+    getProfile(language);
     // eslint-disable-next-line
   }, [language]);
 
@@ -48,7 +53,7 @@ const Skills = () => {
   return skillLevels.map((skillLevel) => (
     <div className="wrapper justify-skills" key={skillLevel.level}>
       <div className="skill-level">
-        {language === 'en' ? 'Level ' : 'Niveau '}
+        {dictionary.level}
         {skillLevel.level}
       </div>
       {skillLevel.skills.map((skill) => (

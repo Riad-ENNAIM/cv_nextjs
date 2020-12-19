@@ -1,4 +1,4 @@
-import { GET_PROFILE, TOGGLE_TIMELINE, TOGGLE_DARK_MODE, TOGGLE_LANGUAGE } from '../types';
+import { GET_PROFILE, TOGGLE_TIMELINE, TOGGLE_DARK_MODE } from '../types';
 
 const profileReducer = (state, action) => {
   switch (action.type) {
@@ -19,12 +19,6 @@ const profileReducer = (state, action) => {
       return {
         ...state,
         isDarkMode: !state.isDarkMode,
-      };
-
-    case TOGGLE_LANGUAGE:
-      return {
-        ...state,
-        language: action.payload,
       };
 
     default:

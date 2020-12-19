@@ -5,24 +5,18 @@ import HeaderRating from './HeaderRating';
 import Navbar from './Navbar';
 import Loader from '../utils/Loader';
 
+import LanguageContext from '../../context/language/languageContext';
 import ProfileContext from '../../context/profile/profileContext';
 
 const Header = () => {
+  const languageContext = useContext(LanguageContext);
   const profileContext = useContext(ProfileContext);
-  const { profile, isDarkMode, language, isLoading, getProfile } = profileContext;
+
+  const { language } = languageContext;
+  const { profile, isDarkMode, isLoading, getProfile } = profileContext;
 
   useEffect(() => {
-    getProfile();
-
-    document.addEventListener('visibilitychange', () => {
-      document.title = document.hidden
-        ? 'Riad ENNAIM | 🙋‍♂ 🤗'
-        : (document.title = `Riad ENNAIM | ${
-            language && language === 'en'
-              ? 'Full Stack JavaScript Developer'
-              : 'Développeur Full Stack JavaScript'
-          }`);
-    });
+    getProfile(language);
 
     if (isDarkMode) {
       document.documentElement.style.setProperty('--background-color', '#1B2631');

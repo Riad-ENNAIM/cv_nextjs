@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 import Rating from '../utils/Rating';
 import letterColors from '../../data/letterColors';
 
-import ProfileContext from '../../context/profile/profileContext';
+import LanguageContext from '../../context/language/languageContext';
 import ReviewContext from '../../context/review/reviewContext';
 
 const Review = ({ review }) => {
   const { _id, username, comment, rating, date, isDeletable, link } = review;
 
-  const profileContext = useContext(ProfileContext);
+  const languageContext = useContext(LanguageContext);
   const reviewContext = useContext(ReviewContext);
-  const { language } = profileContext;
+  const { dictionary } = languageContext;
   const { deleteReview } = reviewContext;
+
   const [avatar, setAvatar] = useState({
     name: '',
     background: '',
@@ -54,7 +55,7 @@ const Review = ({ review }) => {
         if (diffTime < 1000 * 60 * 60 * 24) {
           if (diffTime < 1000 * 60 * 60) {
             if (diffTime < 1000 * 60) {
-              setDiffDate(`${language === 'en' ? 'Now' : 'Maintenant'}`);
+              setDiffDate(`${dictionary.now}`);
             } else {
               // Minutes
               const numberOfUnits = Math.round(diffTime / (1000 * 60));
@@ -63,34 +64,22 @@ const Review = ({ review }) => {
           } else {
             // Hours
             const numberOfUnits = Math.round(diffTime / (1000 * 60 * 60));
-            setDiffDate(
-              `${numberOfUnits} ${language === 'en' ? 'hour' : 'heure'}${
-                numberOfUnits > 1 ? 's' : ''
-              }`
-            );
+            setDiffDate(`${numberOfUnits} ${dictionary.hour}${numberOfUnits > 1 ? 's' : ''}`);
           }
         } else {
           // Days
           const numberOfUnits = Math.round(diffTime / (1000 * 60 * 60 * 24));
-          setDiffDate(
-            `${numberOfUnits} ${language === 'en' ? 'day' : 'jour'}${numberOfUnits > 1 ? 's' : ''}`
-          );
+          setDiffDate(`${numberOfUnits} ${dictionary.day}${numberOfUnits > 1 ? 's' : ''}`);
         }
       } else {
         // Weeks
         const numberOfUnits = Math.round(diffTime / (1000 * 60 * 60 * 24 * 7));
-        setDiffDate(
-          `${numberOfUnits} ${language === 'en' ? 'week' : 'semaine'}${
-            numberOfUnits > 1 ? 's' : ''
-          }`
-        );
+        setDiffDate(`${numberOfUnits} ${dictionary.week}${numberOfUnits > 1 ? 's' : ''}`);
       }
     } else {
       // Months
       const numberOfUnits = Math.round(diffTime / (1000 * 60 * 60 * 24 * 30));
-      setDiffDate(
-        `${numberOfUnits} ${language === 'en' ? `month${numberOfUnits > 1 ? 's' : ''}` : 'mois'}`
-      );
+      setDiffDate(`${numberOfUnits} ${numberOfUnits > 1 ? dictionary.months : dictionary.month}`);
     }
   };
 

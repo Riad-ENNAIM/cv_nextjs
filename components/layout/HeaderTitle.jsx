@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
 
-import ProfileContext from '../../context/profile/profileContext';
+import LanguageContext from '../../context/language/languageContext';
 
 const HeaderTitle = ({ profile }) => {
-  const profileContext = useContext(ProfileContext);
-  const { language } = profileContext;
+  const languageContext = useContext(LanguageContext);
+  const { dictionary } = languageContext;
 
   return (
     <div className="main-title">
@@ -42,7 +42,7 @@ const HeaderTitle = ({ profile }) => {
           href="/pdf/Riad-ENNAIM.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          title={language === 'en' ? 'Download PDF' : 'Télécharger PDF'}
+          title={dictionary.downloadPdfLinkTitle}
         >
           <i className="fas fa-cloud-download-alt" />
         </a>

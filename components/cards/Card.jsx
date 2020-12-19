@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import useFormatDate from '../../hooks/useFormatDate';
 import Notes from './Notes';
 
-import ProfileContext from '../../context/profile/profileContext';
+import LanguageContext from '../../context/language/languageContext';
 
 const Card = ({ data }) => {
-  const profileContext = useContext(ProfileContext);
-  const { language } = profileContext;
+  const languageContext = useContext(LanguageContext);
+  const { dictionary } = languageContext;
 
   const start = useFormatDate(data.start);
   const end = useFormatDate(data.end);
@@ -18,11 +18,7 @@ const Card = ({ data }) => {
         <h3 className="card-title">{data.title}</h3>
         {data.isCurrent && (
           <span className="tag-flash">
-            {language === 'en'
-              ? data.type === 'TRAINING'
-                ? 'In progress'
-                : 'Current'
-              : 'En cours'}
+            {data.type === 'TRAINING' ? dictionary.inProgress : dictionary.current}
           </span>
         )}
       </div>
@@ -33,16 +29,8 @@ const Card = ({ data }) => {
         <div className="wrapper">
           {(start || end) && (
             <span className="card-date tag">
-              {start && !end
-                ? `${language === 'en' ? 'Since' : 'Depuis'} ${start}`
-                : start && end
-                ? start
-                : ''}
-              {end && start
-                ? ` ${language === 'en' ? 'to' : 'à'} ${end}`
-                : end && !start
-                ? end
-                : ''}
+              {start && !end ? `${dictionary.since} ${start}` : start && end ? start : ''}
+              {end && start ? ` ${dictionary.to} ${end}` : end && !start ? end : ''}
             </span>
           )}
 

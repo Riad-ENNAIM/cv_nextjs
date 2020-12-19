@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import ProfileContext from '../context/profile/profileContext';
+import LanguageContext from '../context/language/languageContext';
 
 const useFormatDate = (date) => {
-  const profileContext = useContext(ProfileContext);
-  const { language } = profileContext;
+  const languageContext = useContext(LanguageContext);
+  const { language } = languageContext;
 
   if (!date) return null;
 

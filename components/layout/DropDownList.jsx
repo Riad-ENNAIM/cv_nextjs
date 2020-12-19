@@ -1,20 +1,17 @@
 import { useContext } from 'react';
 
+import LanguageContext from '../../context/language/languageContext';
 import ProfileContext from '../../context/profile/profileContext';
 
 const DropDownList = () => {
+  const languageContext = useContext(LanguageContext);
   const profileContext = useContext(ProfileContext);
-  const {
-    isTimeline,
-    isDarkMode,
-    language,
-    toggleTimeline,
-    toggleDarkMode,
-    toggleLanguage,
-  } = profileContext;
 
-  const changeLang = (lang) => {
-    if (language && lang !== language) {
+  const { language, dictionary, toggleLanguage } = languageContext;
+  const { isTimeline, isDarkMode, toggleTimeline, toggleDarkMode } = profileContext;
+
+  const changeLang = (newLanguage) => {
+    if (language && newLanguage !== language) {
       toggleLanguage();
     }
   };
@@ -27,7 +24,7 @@ const DropDownList = () => {
 
       <div className="dropdown-content">
         <div className="switcher">
-          <div className="switcher-title">{language === 'en' ? 'Language' : 'Langue'}</div>
+          <div className="switcher-title">{dictionary.languageSwitcher}</div>
           <div className="switcher-body">
             <span
               className={`lang ${language !== 'en' && 'active'}`}
@@ -51,7 +48,7 @@ const DropDownList = () => {
         </div>
 
         <div className="switcher">
-          <div className="switcher-title">{language === 'en' ? 'Timeline' : 'Chronologie'}</div>
+          <div className="switcher-title">{dictionary.timelineSwitcher}</div>
           <div className="switcher-body">
             <label className="switch" htmlFor="timelineCheckbox">
               <input
@@ -66,7 +63,7 @@ const DropDownList = () => {
         </div>
 
         <div className="switcher">
-          <div className="switcher-title">{language === 'en' ? 'Dark mode' : 'Mode sombre'}</div>
+          <div className="switcher-title">{dictionary.darkModeSwitcher}</div>
           <div className="switcher-body">
             <label className="switch" htmlFor="darkModeCheckbox">
               <input
