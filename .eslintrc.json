@@ -24,12 +24,12 @@
     "react/react-in-jsx-scope": "off",
     "react/forbid-prop-types": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
     "func-names": "off",
     "no-underscore-dangle": "off",
     "no-nested-ternary": "off",
     "no-plusplus": "off",
     "consistent-return": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "react/no-danger": "off"
+    "jsx-a11y/click-events-have-key-events": "off"
   }
 }

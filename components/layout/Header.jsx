@@ -1,4 +1,7 @@
 import { useEffect, useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 import HeaderTitle from './HeaderTitle';
 import HeaderInfo from './HeaderInfo';
 import HeaderRating from './HeaderRating';
@@ -50,7 +53,7 @@ const Header = () => {
         <HeaderRating />
 
         <div className="show-more">
-          <i className="fas fa-chevron-down" />
+          <FontAwesomeIcon icon={faChevronDown} />
         </div>
       </div>
       <Navbar />

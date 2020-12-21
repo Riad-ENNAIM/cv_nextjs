@@ -1,5 +1,8 @@
 import { useEffect, useState, useContext } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes, faThumbsUp, faThumbsDown, faHeart } from '@fortawesome/free-solid-svg-icons';
+
 import Rating from '../utils/Rating';
 import letterColors from '../../data/letterColors';
 
@@ -14,13 +17,14 @@ const Review = ({ review }) => {
   const { dictionary } = languageContext;
   const { deleteReview } = reviewContext;
 
+  const [formatedComment, setFormatedComment] = useState();
   const [avatar, setAvatar] = useState({
     name: '',
     background: '',
   });
   const [diffDate, setDiffDate] = useState();
 
-  const setAvatarFromUsername = () => {
+  const getAvatarFromUsername = () => {
     const name = username
       .replace(/[^A-Z a-z]/g, '')
       .replace(/\s+/g, ' ')
@@ -83,8 +87,76 @@ const Review = ({ review }) => {
     }
   };
 
+  const defineRegExp = (words) => {
+    const regexMetachars = /[(){[*+?.\\^$|]/g;
+    const rules = words;
+
+    for (let i = 0; i < rules.length; i++) {
+      rules[i] = rules[i].replace(regexMetachars, '\\$&');
+    }
+
+    return new RegExp(`\\b(?:${rules.join('|')})\\b`, 'gi');
+  };
+
+  const alternateMerge = (arr1, arr2) => {
+    let i = 0;
+    let j = 0;
+    let k = 0;
+    const result = [];
+
+    // Traverse both array
+    while (i < arr1.length && j < arr2.length) {
+      result[k++] = arr1[i++];
+      result[k++] = arr2[j++];
+    }
+
+    // Store remaining elements of first array
+    while (i < arr1.length) result[k++] = arr1[i++];
+
+    // Store remaining elements of second array
+    while (j < arr2.length) result[k++] = arr2[j++];
+
+    return result;
+  };
+
+  const formatComment = () => {
+    const regex = defineRegExp(['faIconThumbsUp', 'faIconHeart', 'faIconThumbsDown']);
+
+    const textsArray = comment.split(regex) || [];
+    if (textsArray[0] === '') textsArray.shift();
+    if (textsArray[textsArray.length - 1] === '') textsArray.pop();
+
+    const iconTypesArray = comment.match(regex) || [];
+
+    const iconsArray = iconTypesArray.map((iconType, index) => {
+      if (iconType === 'faIconThumbsUp')
+        return (
+          <FontAwesomeIcon key={index} icon={faThumbsUp} className="like" title="(y) = Like" />
+        );
+      if (iconType === 'faIconHeart')
+        return <FontAwesomeIcon key={index} icon={faHeart} className="heart" title="<3 = Heart" />;
+      if (iconType === 'faIconThumbsDown')
+        return (
+          <FontAwesomeIcon
+            key={index}
+            icon={faThumbsDown}
+            className="dislike"
+            title=":-1: = Dislike"
+          />
+        );
+      return null;
+    });
+
+    const commentToArray = comment.startsWith('faIcon')
+      ? alternateMerge(iconsArray, textsArray)
+      : alternateMerge(textsArray, iconsArray);
+
+    setFormatedComment(commentToArray);
+  };
+
   useEffect(() => {
-    setAvatarFromUsername();
+    getAvatarFromUsername();
+    formatComment();
     // eslint-disable-next-line
   }, []);
 
@@ -121,11 +193,11 @@ const Review = ({ review }) => {
 
           {isDeletable && (
             <div className="remove" onClick={() => deleteReview(_id)} role="button" tabIndex="0">
-              <i className="fas fa-times" />
+              <FontAwesomeIcon icon={faTimes} />
             </div>
           )}
         </div>
-        <p dangerouslySetInnerHTML={{ __html: comment }} />
+        <p>{formatedComment}</p>
       </div>
     </div>
   );

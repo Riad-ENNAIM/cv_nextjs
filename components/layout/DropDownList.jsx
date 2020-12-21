@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
 
 import LanguageContext from '../../context/language/languageContext';
 import ProfileContext from '../../context/profile/profileContext';
@@ -19,7 +21,7 @@ const DropDownList = () => {
   return (
     <>
       <span className="drop-btn">
-        <i className="fas fa-cog" />
+        <FontAwesomeIcon icon={faCog} />
       </span>
 
       <div className="dropdown-content">

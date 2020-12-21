@@ -21,7 +21,6 @@ const Layout = ({ children }) => (
       <meta name="author" content="Riad ENNAIM" />
       <link rel="apple-touch-icon" href="logo192.png" />
       <link rel="manifest" href="manifest.json" />
-      <script src="https://kit.fontawesome.com/ef80b4f344.js" crossOrigin="anonymous" />
       <title>Riad ENNAIM | Développeur Full Stack JavaScript</title>
     </Head>
     <Header />

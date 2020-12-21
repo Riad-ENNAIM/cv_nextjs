@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Rating = ({ rating, isActive, onClickStar }) => {
   const [stars, setStars] = useState(null);
@@ -13,30 +15,23 @@ const Rating = ({ rating, isActive, onClickStar }) => {
       // Filled stars
       for (let i = 0; i < index + 1; i++) {
         starsArray.push(
-          <i
+          <FontAwesomeIcon
             key={i}
-            className="fas fa-star"
+            icon={faStar}
             onMouseOver={() => hoverOnStar(i)}
-            onFocus={() => hoverOnStar(i)}
             onClick={() => onClick(i)}
-            role="button"
-            tabIndex="0"
-            aria-label="star"
           />
         );
       }
       // Simple Stars
       for (let i = index + 1; i < 5; i++) {
         starsArray.push(
-          <i
+          <FontAwesomeIcon
             key={i}
-            className="far fa-star"
+            icon={faStar}
+            className="star-empty"
             onMouseOver={() => hoverOnStar(i)}
-            onFocus={() => hoverOnStar(i)}
             onClick={() => onClick(i)}
-            role="button"
-            tabIndex="0"
-            aria-label="star"
           />
         );
       }
@@ -52,15 +47,12 @@ const Rating = ({ rating, isActive, onClickStar }) => {
       // Simple Stars for active rating
       for (let i = 0; i < 5; i++) {
         starsArray.push(
-          <i
+          <FontAwesomeIcon
             key={i}
-            className="far fa-star"
+            icon={faStar}
+            className="star-empty"
             onMouseOver={() => hoverOnStar(i)}
-            onFocus={() => hoverOnStar(i)}
             onClick={() => onClick(i)}
-            role="button"
-            tabIndex="0"
-            aria-label="star"
           />
         );
       }
@@ -69,19 +61,19 @@ const Rating = ({ rating, isActive, onClickStar }) => {
 
       // Filled stars
       for (let i = 0; i < trunc; i++) {
-        starsArray.push(<i key={i} className="fas fa-star" />);
+        starsArray.push(<FontAwesomeIcon key={i} icon={faStar} />);
       }
 
       if (rating < 5) {
         // Half star
         if (rating > trunc) {
-          starsArray.push(<i key={trunc} className="fas fa-star-half-alt" />);
+          starsArray.push(<FontAwesomeIcon key={trunc} icon={faStarHalfAlt} />);
         }
 
         // Simple Stars
         if (Math.ceil(rating) < 5) {
           for (let i = Math.ceil(rating); i < 5; i++) {
-            starsArray.push(<i key={i} className="far fa-star" />);
+            starsArray.push(<FontAwesomeIcon key={i} icon={faStar} className="star-empty" />);
           }
         }
       }
@@ -103,15 +95,12 @@ const Rating = ({ rating, isActive, onClickStar }) => {
         // Simple Stars
         for (let i = 0; i < 5; i++) {
           starsArray.push(
-            <i
+            <FontAwesomeIcon
               key={i}
-              className="far fa-star"
+              icon={faStar}
+              className="star-empty"
               onMouseOver={() => hoverOnStar(i)}
-              onFocus={() => hoverOnStar(i)}
               onClick={() => onClick(i)}
-              role="button"
-              tabIndex="0"
-              aria-label="star"
             />
           );
         }
@@ -119,15 +108,11 @@ const Rating = ({ rating, isActive, onClickStar }) => {
         // Filled stars
         for (let i = 0; i < rating; i++) {
           starsArray.push(
-            <i
+            <FontAwesomeIcon
               key={i}
-              className="fas fa-star"
+              icon={faStar}
               onMouseOver={() => hoverOnStar(i)}
-              onFocus={() => hoverOnStar(i)}
               onClick={() => onClick(i)}
-              role="button"
-              tabIndex="0"
-              aria-label="star"
             />
           );
         }
@@ -135,15 +120,12 @@ const Rating = ({ rating, isActive, onClickStar }) => {
         // Simple Stars
         for (let i = rating; i < 5; i++) {
           starsArray.push(
-            <i
+            <FontAwesomeIcon
               key={i}
-              className="far fa-star"
+              icon={faStar}
+              className="star-empty"
               onMouseOver={() => hoverOnStar(i)}
-              onFocus={() => hoverOnStar(i)}
               onClick={() => onClick(i)}
-              role="button"
-              tabIndex="0"
-              aria-label="star"
             />
           );
         }

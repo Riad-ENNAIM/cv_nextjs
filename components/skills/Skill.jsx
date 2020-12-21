@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const Skill = ({ skill }) => (
   <div className="skill">
     <div className="skill-header container justify-content-space-between">
       <h3 className="skill-title">{skill.title}</h3>
-
-      <i className="fas fa-bars" />
+      <FontAwesomeIcon icon={faBars} />
     </div>
 
     <div className="skill-content">
       {skill.subSkills.map((subSkill) => (
         <div className="skill-item" key={subSkill._id}>
-          <i className="fas fa-caret-right" />
+          <FontAwesomeIcon icon={faCaretRight} />
           <p>{subSkill.title}</p>
         </div>
       ))}

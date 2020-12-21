@@ -1,24 +1,31 @@
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faQuoteLeft,
+  faMapMarkerAlt,
+  faEnvelope,
+  faPhoneAlt,
+} from '@fortawesome/free-solid-svg-icons';
 
 const HeaderInfo = ({ profile }) => (
   <div className="main-info">
     <div className="info-group">
-      <i className="fas fa-quote-left" />
+      <FontAwesomeIcon icon={faQuoteLeft} />
       <p className="description">{profile.description}</p>
     </div>
 
     <div className="info-group">
-      <i className="fas fa-map-marker-alt" />
+      <FontAwesomeIcon icon={faMapMarkerAlt} />
       <p>{profile.location}</p>
     </div>
 
     <div className="info-group">
-      <i className="fas fa-envelope" />
+      <FontAwesomeIcon icon={faEnvelope} />
       <p>{profile.email}</p>
     </div>
 
     <div className="info-group">
-      <i className="fas fa-phone-alt" />
+      <FontAwesomeIcon icon={faPhoneAlt} />
       <p>{profile.phone}</p>
     </div>
   </div>

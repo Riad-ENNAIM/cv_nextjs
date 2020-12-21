@@ -1,4 +1,7 @@
 import { useState, useContext, useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 import Rating from '../utils/Rating';
 import letterColors from '../../data/letterColors';
 
@@ -64,10 +67,10 @@ const ReviewForm = () => {
       ...review,
       username: review.username.replace(/\s+/g, ' ').trim(), // Remove extrat white spaces
       comment: review.comment
-        .replace(/\(y\)/g, '<i class="like fas fa-thumbs-up" title="(y) = Like"></i>')
-        .replace(/<3/g, '<i class="heart fas fa-heart" title="<3 = Heart"></i>')
-        .replace(/:-1:/g, '<i class="dislike fas fa-thumbs-down" title="<3 = Dislike"></i>')
-        .replace(/\n\r?/g, '<br />'), // Add line breaks
+        .replace(/\(y\)/g, 'faIconThumbsUp')
+        .replace(/<3/g, 'faIconHeart')
+        .replace(/:-1:/g, 'faIconThumbsDown')
+        .replace(/\n\r?/g, '<br>'), // Add line breaks
       link: review.link.length > 0 ? review.link : 'http://www.riadennaim.com/',
     });
   };
@@ -80,7 +83,7 @@ const ReviewForm = () => {
     <form onSubmit={onSubmit} ref={formRef}>
       <div className="review-form">
         <div className="remove" onClick={closeForm} role="button" tabIndex="0">
-          <i className="fas fa-times" />
+          <FontAwesomeIcon icon={faTimes} />
         </div>
 
         <div className="review-form-title">

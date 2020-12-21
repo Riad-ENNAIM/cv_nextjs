@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
 
 import LanguageContext from '../../context/language/languageContext';
 
@@ -20,7 +22,7 @@ const HeaderTitle = ({ profile }) => {
           rel="noopener noreferrer"
           title={profile.links[0].name}
         >
-          <i className="fab fa-github-square" />
+          <FontAwesomeIcon icon={['fab', 'github-square']} />
         </a>
         <a
           href={profile.links[1].path}
@@ -28,7 +30,7 @@ const HeaderTitle = ({ profile }) => {
           rel="noopener noreferrer"
           title={profile.links[1].name}
         >
-          <i className="fab fa-linkedin" />
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
         </a>
         <a
           href={profile.links[2].path}
@@ -36,7 +38,7 @@ const HeaderTitle = ({ profile }) => {
           rel="noopener noreferrer"
           title={profile.links[2].name}
         >
-          <i className="fas fa-address-card" />
+          <FontAwesomeIcon icon={faAddressCard} />
         </a>
         <a
           href="/pdf/Riad-ENNAIM.pdf"
@@ -44,7 +46,7 @@ const HeaderTitle = ({ profile }) => {
           rel="noopener noreferrer"
           title={dictionary.downloadPdfLinkTitle}
         >
-          <i className="fas fa-cloud-download-alt" />
+          <FontAwesomeIcon icon={faCloudDownloadAlt} />
         </a>
       </div>
     </div>

@@ -215,7 +215,11 @@ textarea:focus {
   color: var(--gold-color);
 }
 
-.rating.active i {
+.rating svg.star-empty {
+  color: #D6DBDF;
+}
+
+.rating.active svg {
   cursor: pointer;
 }
 
@@ -283,7 +287,7 @@ textarea:focus {
   margin-bottom: 0;
 }
 
-#main-header .main-info .info-group i {
+#main-header .main-info .info-group svg {
   width: 20px;
   margin-right: 10px;
 }
@@ -534,10 +538,6 @@ textarea:focus {
   background: var(--primary-color);
 }
 
-.card .card-body i {
-  margin-right: 10px;
-}
-
 .card .card-body .card-description {
   font-size: 1.1em;
 }
@@ -558,7 +558,7 @@ textarea:focus {
   align-items: baseline;
 }
 
-.card .card-body .notes .note i {
+.card .card-body .notes .note svg {
   margin-right: 17px;
 }
 
@@ -733,7 +733,7 @@ ul li.milestone-action span.number span {
   color: var(--primary-color);
 }
 
-.skill .skill-header i {
+.skill .skill-header svg {
   color: #666;
   padding-top: 6px;
   cursor: pointer;
@@ -753,7 +753,7 @@ ul li.milestone-action span.number span {
   font-size: 0.9em;
 }
 
-.skill .skill-content .skill-item i {
+.skill .skill-content .skill-item svg {
   margin-right: 17px;
 }
 
@@ -812,12 +812,12 @@ ul li.milestone-action span.number span {
   transform: scale(1.2);
 }
 
-.review .review-content i.like,
-.review .review-content i.dislike {
+.review .review-content svg.like,
+.review .review-content svg.dislike {
   color: #21618C;
 }
 
-.review .review-content i.heart {
+.review .review-content svg.heart {
   color: #E74C3C;
 }
 

@@ -1,5 +1,7 @@
 import { useContext, useState } from 'react';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard, faGlobeAfrica } from '@fortawesome/free-solid-svg-icons';
 
 import LanguageContext from '../../context/language/languageContext';
 
@@ -29,7 +31,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           title="GitHub"
         >
-          <i aria-hidden className="fab fa-github-square" />
+          <FontAwesomeIcon icon={['fab', 'github']} />
         </a>
         <a
           href="https://www.linkedin.com/in/riad-ennaim/"
@@ -37,7 +39,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           title="LinkedIn"
         >
-          <i aria-hidden className="fab fa-linkedin" />
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
         </a>
         <a
           href="https://riad-ennaim.github.io/bio/"
@@ -45,7 +47,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           title="Bio"
         >
-          <i aria-hidden className="fas fa-address-card" />
+          <FontAwesomeIcon icon={faAddressCard} />
         </a>
       </p>
 
@@ -68,7 +70,7 @@ const Footer = () => {
           aria-checked="false"
           tabIndex="0"
         >
-          <i aria-hidden className="fas fa-globe-africa" />
+          <FontAwesomeIcon icon={faGlobeAfrica} />
           {language === 'en' ? ' Français' : ' English'}
         </span>
       ) : (
@@ -77,7 +79,7 @@ const Footer = () => {
           onMouseOver={() => setNewLanguage(!newLanguage)}
           onFocus={() => setNewLanguage(!newLanguage)}
         >
-          <i aria-hidden className="fas fa-globe-africa" />
+          <FontAwesomeIcon icon={faGlobeAfrica} />
           {language === 'en' ? ' English' : ' Français'}
         </span>
       )}
